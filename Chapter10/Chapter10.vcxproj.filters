@@ -18,5 +18,11 @@
     <ClCompile Include="Bank.h">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="c1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
