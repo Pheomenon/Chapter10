@@ -12,18 +12,29 @@ private:
 	char fname[LIMIT];
 public:
 	Person() { lname = ""; fname[0] = '\0'; }
-	Person(const char* fname);
-	Person(const std::string& ln, const char* fn = "Heyyou");
+	Person(const char* userName) {
+		strcpy_s(fname,userName);
+	}
+	Person(const std::string& ln, const char* fn = "Heyyou") {
+		lname = ln;
+		strcpy_s(fname, fn);
+	}
 	~Person() {
 		{
 			std::cout << "Program was terminated !";
 		}
 	}
+
 	//the following methods display lname and fname
 	void Show()const {
-		std::cout << lname;
+		std::cout <<"Your name: "<< fname <<" "<< lname;
 	};
-	//void FormalShow() const;
+	void FormalShow() const {
+		if (lname == "\0") 
+			std::cout << fname;
+		else
+		std::cout << fname << '-' << lname;
+	}
 };
 
 
