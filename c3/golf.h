@@ -46,7 +46,6 @@ public:
 			goto M;
 		}
 	}
-
 	~Golf();
 };
 
