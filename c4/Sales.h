@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-
 namespace SALES {
 	const int QUARTERS = 4;
 	using std::cout;
@@ -100,7 +99,6 @@ namespace SALES {
 					s.sales[i] = s.sales[i];
 				}
 
-
 				double sum = 0;
 				for (int i = 0; i < QUARTERS; i++) {
 					sum += s.sales[i];
@@ -126,7 +124,7 @@ namespace SALES {
 			cout << "MIN: " << s.min << endl;
 			cout << "AVG: " << s.average << endl << endl;
 		}
-	
+
 		~Sales() { cout << "BYE!"; }
 
 	private:
@@ -135,7 +133,6 @@ namespace SALES {
 		double max;
 		double min;
 	};
-
 }
 
 
